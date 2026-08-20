@@ -1,1 +1,51 @@
 
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:text="JeevanRakshak"
+        android:textSize="28sp"
+        android:textColor="#FF9933"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        android:text="MOCK PILOT - City A & City B"
+        android:textSize="14sp"
+        android:textColor="#138808"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnAlert"
+        android:text="⚠️ TEST ALERT BHEJO ⚠️"
+        android:textSize="18sp"
+        android:background="#FF0000"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/btnMap"
+        android:text="🗺️ TEST SAFE ROUTE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnHelp"
+        android:text="🚑 TEST HELP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
