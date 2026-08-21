@@ -1,26 +1,18 @@
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace 'com.jeevanrakshak.mockpilot'
-    compileSdk 34
-
-    defaultConfig {
-        applicationId "com.jeevanrakshak.mockpilot"
-        minSdk 21
-        targetSdk 34
-        versionCode 1
-        versionName "1.0"
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-        }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.2.2'
     }
 }
-
-dependencies {
-    implementation 'androidx.appcompat:appcompat:1.6.1'
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
