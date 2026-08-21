@@ -1,20 +1,29 @@
 plugins {
     id 'com.android.application'
 }
+
 android {
-    namespace 'com.jeevanrakshak.mockpilot'
+    namespace 'com.chandan.jeevanrakshak'
     compileSdk 34
     defaultConfig {
-        applicationId "com.jeevanrakshak.mockpilot"
-        minSdk 21
+        applicationId "com.chandan.jeevanrakshak"
+        minSdk 24
         targetSdk 34
         versionCode 1
-        versionName "1.0"
+        versionName "1.0-mock-pilot"
     }
     buildTypes {
-        release { minifyEnabled false }
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 }
+
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
 }
